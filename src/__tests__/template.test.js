@@ -15,10 +15,14 @@ describe("fillTemplate", () => {
     ${"Концерт[ {title}][ в {city}]"}   | ${{ city: "Москве", title: "Qwerty" }} | ${"Концерт Qwerty в Москве"}
     ${"Концерт {title} в {city}"}       | ${{}}                                  | ${"Концерт  в "}
     ${"Концерт {title} в {city}"}       | ${{ city: "Москве", title: "Qwerty" }} | ${"Концерт Qwerty в Москве"}
-  `("fill template '$input' with params $params should be equal '$output'", ({ input, params, output }) => {
-    expect.hasAssertions();
-    expect.assertions(1);
+    ${"Просто строка без переменных"}   | ${{ city: "Москве", title: "Qwerty" }} | ${"Просто строка без переменных"}
+  `(
+    "fill template '$input' with params $params should be equal '$output'",
+    ({ input, params, output }) => {
+      expect.hasAssertions();
+      expect.assertions(1);
 
-    expect(fillTemplate(input, params)).toBe(output);
-  });
+      expect(fillTemplate(input, params)).toBe(output);
+    }
+  );
 });
