@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse complex string with nested group 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "type": "text",
+      "value": "Test string",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": " with group",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "type": "text",
+              "value": " and ",
+            },
+            Object {
+              "type": "variable",
+              "value": "var",
+            },
+          ],
+          "type": "group",
+        },
+      ],
+      "type": "group",
+    },
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parse complex string with nested group 2`] = `
+Object {
+  "children": Array [
+    Object {
+      "type": "text",
+      "value": "Test string",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": " with ",
+        },
+        Object {
+          "type": "variable",
+          "value": "group",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "type": "text",
+              "value": " and ",
+            },
+            Object {
+              "type": "variable",
+              "value": "var",
+            },
+          ],
+          "type": "group",
+        },
+      ],
+      "type": "group",
+    },
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parse simple string 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "type": "text",
+      "value": "Test string",
+    },
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parse string with group 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "type": "text",
+      "value": "Test string",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": " with group",
+        },
+      ],
+      "type": "group",
+    },
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parse string with group 2`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": "Test string ",
+        },
+      ],
+      "type": "group",
+    },
+    Object {
+      "type": "text",
+      "value": "with group",
+    },
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parse string with group and variable 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "type": "text",
+      "value": "Test string",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": " with group",
+        },
+      ],
+      "type": "group",
+    },
+    Object {
+      "type": "text",
+      "value": " and ",
+    },
+    Object {
+      "type": "variable",
+      "value": "var",
+    },
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parse string with group and variable 2`] = `
+Object {
+  "children": Array [
+    Object {
+      "type": "text",
+      "value": "Test string",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "text",
+          "value": " with group and ",
+        },
+        Object {
+          "type": "variable",
+          "value": "var",
+        },
+      ],
+      "type": "group",
+    },
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parse string with variable 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "type": "text",
+      "value": "Test string with ",
+    },
+    Object {
+      "type": "variable",
+      "value": "var",
+    },
+  ],
+  "type": "root",
+}
+`;
